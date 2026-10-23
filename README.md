@@ -1,3 +1,4 @@
+
 # CodeAlpha Docker Web Server
 
 A simple Nginx web server running inside a Docker container, created as part of the CodeAlpha DevOps Internship.
@@ -43,3 +44,7 @@ docker inspect --format='{{.State.Health.Status}}' codealpha-web
 - Configured port mapping.
 - Implemented a Docker health check.
 - Tested the website and container status.
+=======
+# CodeAlpha_DockerWebServer
+Dockerized Nginx web server with container lifecycle management, health checks and troubleshooting for the CodeAlpha DevOps Internship.
+>>>>>>> ad55c4a0f0091735e0564a21e36e3a6b99ffff88

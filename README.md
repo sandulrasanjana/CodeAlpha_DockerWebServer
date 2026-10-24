@@ -48,3 +48,47 @@ docker inspect --format='{{.State.Health.Status}}' codealpha-web
 # CodeAlpha_DockerWebServer
 Dockerized Nginx web server with container lifecycle management, health checks and troubleshooting for the CodeAlpha DevOps Internship.
 >>>>>>> ad55c4a0f0091735e0564a21e36e3a6b99ffff88
+
+## Docker Container Management
+
+### Check running containers
+```bash
+docker ps
+```
+
+### View all containers
+```bash
+docker ps -a
+```
+
+### Stop the web server
+```bash
+docker stop codealpha-web
+```
+
+### Start the web server
+```bash
+docker start codealpha-web
+```
+
+### View container logs
+```bash
+docker logs codealpha-web
+```
+
+### Check container health
+```bash
+docker inspect --format='{{.State.Health.Status}}' codealpha-web
+```
+
+### Test the web server
+```bash
+curl http://localhost:8082
+```
+
+## Key Learnings
+
+- Built a web server Docker image using Nginx Alpine.
+- Ran a container with Docker port mapping.
+- Configured a Docker health check.
+- Practised container lifecycle and troubleshooting commands.
